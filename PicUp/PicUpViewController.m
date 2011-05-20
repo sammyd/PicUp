@@ -9,6 +9,7 @@
 #import "PicUpViewController.h"
 
 @implementation PicUpViewController
+@synthesize imageView, choosePhotoButton, takePhotoButton;
 
 - (void)dealloc
 {
@@ -44,6 +45,23 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (IBAction)getPhoto:(id)sender {
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.delegate = self;
+    if ((UIButton*) sender == choosePhotoButton) {
+        picker.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+    } else {
+        picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+    }
+    
+    [self presentModalViewController:picker animated:YES];
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    [picker dismissModalViewControllerAnimated:YES];
+    imageView.image = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
 }
 
 @end

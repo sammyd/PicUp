@@ -39,20 +39,20 @@
 		22B1A62F1386DA5500D1DF39 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		22B1A6311386DA5500D1DF39 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		22B1A6331386DA5500D1DF39 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		22B1A6371386DA5500D1DF39 /* PicUp-Info.plist */ = {isa = PBXFileReference; path = "PicUp-Info.plist"; sourceTree = "<group>"; };
+		22B1A6371386DA5500D1DF39 /* PicUp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PicUp-Info.plist"; sourceTree = "<group>"; };
 		22B1A6391386DA5500D1DF39 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		22B1A63B1386DA5500D1DF39 /* PicUp-Prefix.pch */ = {isa = PBXFileReference; path = "PicUp-Prefix.pch"; sourceTree = "<group>"; };
+		22B1A63B1386DA5500D1DF39 /* PicUp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PicUp-Prefix.pch"; sourceTree = "<group>"; };
 		22B1A63C1386DA5500D1DF39 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		22B1A63E1386DA5500D1DF39 /* PicUpAppDelegate.h */ = {isa = PBXFileReference; path = PicUpAppDelegate.h; sourceTree = "<group>"; };
+		22B1A63E1386DA5500D1DF39 /* PicUpAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PicUpAppDelegate.h; sourceTree = "<group>"; };
 		22B1A63F1386DA5500D1DF39 /* PicUpAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PicUpAppDelegate.m; sourceTree = "<group>"; };
 		22B1A6421386DA5500D1DF39 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		22B1A6441386DA5500D1DF39 /* PicUpViewController.h */ = {isa = PBXFileReference; path = PicUpViewController.h; sourceTree = "<group>"; };
+		22B1A6441386DA5500D1DF39 /* PicUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PicUpViewController.h; sourceTree = "<group>"; };
 		22B1A6451386DA5500D1DF39 /* PicUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PicUpViewController.m; sourceTree = "<group>"; };
 		22B1A6481386DA5500D1DF39 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PicUpViewController.xib; sourceTree = "<group>"; };
 		22B1A64F1386DA5500D1DF39 /* PicUpTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PicUpTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		22B1A6571386DA5500D1DF39 /* PicUpTests-Info.plist */ = {isa = PBXFileReference; path = "PicUpTests-Info.plist"; sourceTree = "<group>"; };
+		22B1A6571386DA5500D1DF39 /* PicUpTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PicUpTests-Info.plist"; sourceTree = "<group>"; };
 		22B1A6591386DA5500D1DF39 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		22B1A65B1386DA5500D1DF39 /* PicUpTests-Prefix.pch */ = {isa = PBXFileReference; path = "PicUpTests-Prefix.pch"; sourceTree = "<group>"; };
+		22B1A65B1386DA5500D1DF39 /* PicUpTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PicUpTests-Prefix.pch"; sourceTree = "<group>"; };
 		22B1A65C1386DA5500D1DF39 /* PicUpTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PicUpTests.h; sourceTree = "<group>"; };
 		22B1A65E1386DA5500D1DF39 /* PicUpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PicUpTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
