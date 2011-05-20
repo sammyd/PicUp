@@ -64,4 +64,24 @@
     imageView.image = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
 }
 
+
+- (void) uploadPhoto:(id)sender {
+    NSURL *url = [NSURL URLWithString:@"http://ADDRESS_HERE"];
+    ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
+    [request setDelegate:self];
+    [request setPostValue:@"SECRETPASS" forKey:@"key"];
+    [request setData:imageView.image withFileName:@"photo.jpg" andContentType:@"image/jpeg" forKey:@"photo"];
+    [request startAsynchronous];
+}
+
+- (void) requestFinished:(ASIHTTPRequest *) request {
+    NSString *responseString = [request responseString];
+}
+
+- (void)requestFailed:(ASIHTTPRequest *)request
+{
+    NSError *error = [request error];
+}
+
+
 @end

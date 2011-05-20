@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ASIHTTPRequest.h"
+#import "ASIFormDataRequest.h"
+
 
 @interface PicUpViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate> {
     UIImageView *imageView;
@@ -19,5 +22,6 @@
 @property (nonatomic, retain) IBOutlet UIButton * choosePhotoButton;
 
 -(IBAction) getPhoto:(id) sender;
+-(IBAction) uploadPhoto:(id) sender;
 
 @end
