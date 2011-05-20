@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22B1A6301386DA5500D1DF39 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B1A62F1386DA5500D1DF39 /* UIKit.framework */; };
+		22B1A6321386DA5500D1DF39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B1A6311386DA5500D1DF39 /* Foundation.framework */; };
+		22B1A6341386DA5500D1DF39 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B1A6331386DA5500D1DF39 /* CoreGraphics.framework */; };
+		22B1A63A1386DA5500D1DF39 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22B1A6381386DA5500D1DF39 /* InfoPlist.strings */; };
+		22B1A63D1386DA5500D1DF39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B1A63C1386DA5500D1DF39 /* main.m */; };
+		22B1A6401386DA5500D1DF39 /* PicUpAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B1A63F1386DA5500D1DF39 /* PicUpAppDelegate.m */; };
+		22B1A6431386DA5500D1DF39 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22B1A6411386DA5500D1DF39 /* MainWindow.xib */; };
+		22B1A6461386DA5500D1DF39 /* PicUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B1A6451386DA5500D1DF39 /* PicUpViewController.m */; };
+		22B1A6491386DA5500D1DF39 /* PicUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22B1A6471386DA5500D1DF39 /* PicUpViewController.xib */; };
+		22B1A6501386DA5500D1DF39 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B1A62F1386DA5500D1DF39 /* UIKit.framework */; };
+		22B1A6511386DA5500D1DF39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B1A6311386DA5500D1DF39 /* Foundation.framework */; };
+		22B1A6521386DA5500D1DF39 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B1A6331386DA5500D1DF39 /* CoreGraphics.framework */; };
+		22B1A65A1386DA5500D1DF39 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22B1A6581386DA5500D1DF39 /* InfoPlist.strings */; };
+		22B1A65D1386DA5500D1DF39 /* PicUpTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 22B1A65C1386DA5500D1DF39 /* PicUpTests.h */; };
+		22B1A65F1386DA5500D1DF39 /* PicUpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B1A65E1386DA5500D1DF39 /* PicUpTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22B1A6531386DA5500D1DF39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22B1A6221386DA5400D1DF39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22B1A62A1386DA5400D1DF39;
+			remoteInfo = PicUp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		22B1A62B1386DA5400D1DF39 /* PicUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22B1A62F1386DA5500D1DF39 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		22B1A6311386DA5500D1DF39 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		22B1A6331386DA5500D1DF39 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		22B1A6371386DA5500D1DF39 /* PicUp-Info.plist */ = {isa = PBXFileReference; path = "PicUp-Info.plist"; sourceTree = "<group>"; };
+		22B1A6391386DA5500D1DF39 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		22B1A63B1386DA5500D1DF39 /* PicUp-Prefix.pch */ = {isa = PBXFileReference; path = "PicUp-Prefix.pch"; sourceTree = "<group>"; };
+		22B1A63C1386DA5500D1DF39 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		22B1A63E1386DA5500D1DF39 /* PicUpAppDelegate.h */ = {isa = PBXFileReference; path = PicUpAppDelegate.h; sourceTree = "<group>"; };
+		22B1A63F1386DA5500D1DF39 /* PicUpAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PicUpAppDelegate.m; sourceTree = "<group>"; };
+		22B1A6421386DA5500D1DF39 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		22B1A6441386DA5500D1DF39 /* PicUpViewController.h */ = {isa = PBXFileReference; path = PicUpViewController.h; sourceTree = "<group>"; };
+		22B1A6451386DA5500D1DF39 /* PicUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PicUpViewController.m; sourceTree = "<group>"; };
+		22B1A6481386DA5500D1DF39 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PicUpViewController.xib; sourceTree = "<group>"; };
+		22B1A64F1386DA5500D1DF39 /* PicUpTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PicUpTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22B1A6571386DA5500D1DF39 /* PicUpTests-Info.plist */ = {isa = PBXFileReference; path = "PicUpTests-Info.plist"; sourceTree = "<group>"; };
+		22B1A6591386DA5500D1DF39 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		22B1A65B1386DA5500D1DF39 /* PicUpTests-Prefix.pch */ = {isa = PBXFileReference; path = "PicUpTests-Prefix.pch"; sourceTree = "<group>"; };
+		22B1A65C1386DA5500D1DF39 /* PicUpTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PicUpTests.h; sourceTree = "<group>"; };
+		22B1A65E1386DA5500D1DF39 /* PicUpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PicUpTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22B1A6281386DA5400D1DF39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22B1A6301386DA5500D1DF39 /* UIKit.framework in Frameworks */,
+				22B1A6321386DA5500D1DF39 /* Foundation.framework in Frameworks */,
+				22B1A6341386DA5500D1DF39 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22B1A64B1386DA5500D1DF39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22B1A6501386DA5500D1DF39 /* UIKit.framework in Frameworks */,
+				22B1A6511386DA5500D1DF39 /* Foundation.framework in Frameworks */,
+				22B1A6521386DA5500D1DF39 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22B1A6201386DA5400D1DF39 = {
+			isa = PBXGroup;
+			children = (
+				22B1A6351386DA5500D1DF39 /* PicUp */,
+				22B1A6551386DA5500D1DF39 /* PicUpTests */,
+				22B1A62E1386DA5400D1DF39 /* Frameworks */,
+				22B1A62C1386DA5400D1DF39 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		22B1A62C1386DA5400D1DF39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22B1A62B1386DA5400D1DF39 /* PicUp.app */,
+				22B1A64F1386DA5500D1DF39 /* PicUpTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22B1A62E1386DA5400D1DF39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22B1A62F1386DA5500D1DF39 /* UIKit.framework */,
+				22B1A6311386DA5500D1DF39 /* Foundation.framework */,
+				22B1A6331386DA5500D1DF39 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		22B1A6351386DA5500D1DF39 /* PicUp */ = {
+			isa = PBXGroup;
+			children = (
+				22B1A63E1386DA5500D1DF39 /* PicUpAppDelegate.h */,
+				22B1A63F1386DA5500D1DF39 /* PicUpAppDelegate.m */,
+				22B1A6411386DA5500D1DF39 /* MainWindow.xib */,
+				22B1A6441386DA5500D1DF39 /* PicUpViewController.h */,
+				22B1A6451386DA5500D1DF39 /* PicUpViewController.m */,
+				22B1A6471386DA5500D1DF39 /* PicUpViewController.xib */,
+				22B1A6361386DA5500D1DF39 /* Supporting Files */,
+			);
+			path = PicUp;
+			sourceTree = "<group>";
+		};
+		22B1A6361386DA5500D1DF39 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22B1A6371386DA5500D1DF39 /* PicUp-Info.plist */,
+				22B1A6381386DA5500D1DF39 /* InfoPlist.strings */,
+				22B1A63B1386DA5500D1DF39 /* PicUp-Prefix.pch */,
+				22B1A63C1386DA5500D1DF39 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22B1A6551386DA5500D1DF39 /* PicUpTests */ = {
+			isa = PBXGroup;
+			children = (
+				22B1A65C1386DA5500D1DF39 /* PicUpTests.h */,
+				22B1A65E1386DA5500D1DF39 /* PicUpTests.m */,
+				22B1A6561386DA5500D1DF39 /* Supporting Files */,
+			);
+			path = PicUpTests;
+			sourceTree = "<group>";
+		};
+		22B1A6561386DA5500D1DF39 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22B1A6571386DA5500D1DF39 /* PicUpTests-Info.plist */,
+				22B1A6581386DA5500D1DF39 /* InfoPlist.strings */,
+				22B1A65B1386DA5500D1DF39 /* PicUpTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22B1A62A1386DA5400D1DF39 /* PicUp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22B1A6621386DA5500D1DF39 /* Build configuration list for PBXNativeTarget "PicUp" */;
+			buildPhases = (
+				22B1A6271386DA5400D1DF39 /* Sources */,
+				22B1A6281386DA5400D1DF39 /* Frameworks */,
+				22B1A6291386DA5400D1DF39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PicUp;
+			productName = PicUp;
+			productReference = 22B1A62B1386DA5400D1DF39 /* PicUp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		22B1A64E1386DA5500D1DF39 /* PicUpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22B1A6651386DA5500D1DF39 /* Build configuration list for PBXNativeTarget "PicUpTests" */;
+			buildPhases = (
+				22B1A64A1386DA5500D1DF39 /* Sources */,
+				22B1A64B1386DA5500D1DF39 /* Frameworks */,
+				22B1A64C1386DA5500D1DF39 /* Resources */,
+				22B1A64D1386DA5500D1DF39 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22B1A6541386DA5500D1DF39 /* PBXTargetDependency */,
+			);
+			name = PicUpTests;
+			productName = PicUpTests;
+			productReference = 22B1A64F1386DA5500D1DF39 /* PicUpTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22B1A6221386DA5400D1DF39 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 22B1A6251386DA5400D1DF39 /* Build configuration list for PBXProject "PicUp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 22B1A6201386DA5400D1DF39;
+			productRefGroup = 22B1A62C1386DA5400D1DF39 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22B1A62A1386DA5400D1DF39 /* PicUp */,
+				22B1A64E1386DA5500D1DF39 /* PicUpTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22B1A6291386DA5400D1DF39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22B1A63A1386DA5500D1DF39 /* InfoPlist.strings in Resources */,
+				22B1A6431386DA5500D1DF39 /* MainWindow.xib in Resources */,
+				22B1A6491386DA5500D1DF39 /* PicUpViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22B1A64C1386DA5500D1DF39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22B1A65A1386DA5500D1DF39 /* InfoPlist.strings in Resources */,
+				22B1A65D1386DA5500D1DF39 /* PicUpTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22B1A64D1386DA5500D1DF39 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22B1A6271386DA5400D1DF39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22B1A63D1386DA5500D1DF39 /* main.m in Sources */,
+				22B1A6401386DA5500D1DF39 /* PicUpAppDelegate.m in Sources */,
+				22B1A6461386DA5500D1DF39 /* PicUpViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22B1A64A1386DA5500D1DF39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22B1A65F1386DA5500D1DF39 /* PicUpTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22B1A6541386DA5500D1DF39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22B1A62A1386DA5400D1DF39 /* PicUp */;
+			targetProxy = 22B1A6531386DA5500D1DF39 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		22B1A6381386DA5500D1DF39 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22B1A6391386DA5500D1DF39 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		22B1A6411386DA5500D1DF39 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22B1A6421386DA5500D1DF39 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		22B1A6471386DA5500D1DF39 /* PicUpViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22B1A6481386DA5500D1DF39 /* en */,
+			);
+			name = PicUpViewController.xib;
+			sourceTree = "<group>";
+		};
+		22B1A6581386DA5500D1DF39 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22B1A6591386DA5500D1DF39 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22B1A6601386DA5500D1DF39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		22B1A6611386DA5500D1DF39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		22B1A6631386DA5500D1DF39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PicUp/PicUp-Prefix.pch";
+				INFOPLIST_FILE = "PicUp/PicUp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		22B1A6641386DA5500D1DF39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PicUp/PicUp-Prefix.pch";
+				INFOPLIST_FILE = "PicUp/PicUp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		22B1A6661386DA5500D1DF39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PicUp.app/PicUp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PicUpTests/PicUpTests-Prefix.pch";
+				INFOPLIST_FILE = "PicUpTests/PicUpTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		22B1A6671386DA5500D1DF39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PicUp.app/PicUp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PicUpTests/PicUpTests-Prefix.pch";
+				INFOPLIST_FILE = "PicUpTests/PicUpTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22B1A6251386DA5400D1DF39 /* Build configuration list for PBXProject "PicUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22B1A6601386DA5500D1DF39 /* Debug */,
+				22B1A6611386DA5500D1DF39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22B1A6621386DA5500D1DF39 /* Build configuration list for PBXNativeTarget "PicUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22B1A6631386DA5500D1DF39 /* Debug */,
+				22B1A6641386DA5500D1DF39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		22B1A6651386DA5500D1DF39 /* Build configuration list for PBXNativeTarget "PicUpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22B1A6661386DA5500D1DF39 /* Debug */,
+				22B1A6671386DA5500D1DF39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22B1A6221386DA5400D1DF39 /* Project object */;
+}
