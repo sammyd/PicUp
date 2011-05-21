@@ -68,13 +68,12 @@
 
 
 - (void) uploadPhoto:(id)sender {
-    NSURL *url = [NSURL URLWithString:@"http://modulo13.ath.cx/pui_iphone/upload.php"];
+    NSURL *url = [NSURL URLWithString:@"http://picup.heroku.com/photos"];
     NSData *imageData = UIImageJPEGRepresentation(imageView.image, 90);
     
     ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
     [request setDelegate:self];
-    [request setPostValue:@"SECRETPASS" forKey:@"key"];
-    [request setData:imageData withFileName:@"photo.jpg" andContentType:@"image/jpeg" forKey:@"photo"];
+    [request setData:imageData withFileName:@"photo.jpg" andContentType:@"image/jpeg" forKey:@"photo[image]"];
     [activityIndicator startAnimating];
     [request startAsynchronous];
 }
@@ -82,8 +81,8 @@
 - (void) requestFinished:(ASIHTTPRequest *) request {
     [activityIndicator stopAnimating];
     NSString *responseString = [request responseString];
-    NSLog(@"Success: %@", responseString);
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Upload successful" message:@"Photo is now available on the webApp." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    //NSLog(@"Success: %@", responseString);
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Upload successful" message:@"Photo is now available at picup.heroku.com" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [alert autorelease];
     [alert show];
 }
@@ -92,7 +91,7 @@
 {
     [activityIndicator stopAnimating];
     //NSError *error = [request error];
-    NSLog(@"Failure");
+    //NSLog(@"Failure");
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Upload failed" message:@"There was a problem. I don't know what it was. Sorry." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [alert autorelease];
     [alert show];
