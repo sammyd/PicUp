@@ -7,9 +7,10 @@
 //
 
 #import "PicUpViewController.h"
+#import "Tools.h"
 
 @implementation PicUpViewController
-@synthesize imageView, choosePhotoButton, takePhotoButton;
+@synthesize imageView, choosePhotoButton, takePhotoButton, uploadButton, activityIndicator;
 
 - (void)dealloc
 {
@@ -55,32 +56,45 @@
     } else {
         picker.sourceType = UIImagePickerControllerSourceTypeCamera;
     }
-    
     [self presentModalViewController:picker animated:YES];
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     [picker dismissModalViewControllerAnimated:YES];
-    imageView.image = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
+    imageView.image = [(UIImage *)[info objectForKey:@"UIImagePickerControllerOriginalImage"] imageByScalingAndCroppingForSize:CGSizeMake(450.0, 600.0)];
+    uploadButton.hidden = FALSE;
 }
 
 
 - (void) uploadPhoto:(id)sender {
-    NSURL *url = [NSURL URLWithString:@"http://ADDRESS_HERE"];
+    NSURL *url = [NSURL URLWithString:@"http://modulo13.ath.cx/pui_iphone/upload.php"];
+    NSData *imageData = UIImageJPEGRepresentation(imageView.image, 10);
+    
     ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
     [request setDelegate:self];
     [request setPostValue:@"SECRETPASS" forKey:@"key"];
-    [request setData:imageView.image withFileName:@"photo.jpg" andContentType:@"image/jpeg" forKey:@"photo"];
+    [request setData:imageData withFileName:@"photo.jpg" andContentType:@"image/jpeg" forKey:@"photo"];
+    [activityIndicator startAnimating];
     [request startAsynchronous];
 }
 
 - (void) requestFinished:(ASIHTTPRequest *) request {
+    [activityIndicator stopAnimating];
     NSString *responseString = [request responseString];
+    NSLog(@"Success: %@", responseString);
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Upload successful" message:@"Photo is now available on the webApp." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert autorelease];
+    [alert show];
 }
 
 - (void)requestFailed:(ASIHTTPRequest *)request
 {
-    NSError *error = [request error];
+    [activityIndicator stopAnimating];
+    //NSError *error = [request error];
+    NSLog(@"Failure");
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Upload failed" message:@"There was a problem. I don't know what it was. Sorry." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert autorelease];
+    [alert show];
 }
 
 

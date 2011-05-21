@@ -35,6 +35,7 @@
 		22B1A68B13871EAA00D1DF39 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B1A68A13871EAA00D1DF39 /* SystemConfiguration.framework */; };
 		22B1A68D13871EBD00D1DF39 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B1A68C13871EBD00D1DF39 /* MobileCoreServices.framework */; };
 		22B1A68F13871ECC00D1DF39 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B1A68E13871ECC00D1DF39 /* libz.1.2.3.dylib */; };
+		22B1A6991387BE5400D1DF39 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B1A6981387BE5400D1DF39 /* Tools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,8 @@
 		22B1A68A13871EAA00D1DF39 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		22B1A68C13871EBD00D1DF39 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		22B1A68E13871ECC00D1DF39 /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
+		22B1A6971387BE5400D1DF39 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
+		22B1A6981387BE5400D1DF39 /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +163,7 @@
 		22B1A6351386DA5500D1DF39 /* PicUp */ = {
 			isa = PBXGroup;
 			children = (
+				22B1A6901387BB6000D1DF39 /* imageProc */,
 				22B1A66813871CDA00D1DF39 /* Network */,
 				22B1A63E1386DA5500D1DF39 /* PicUpAppDelegate.h */,
 				22B1A63F1386DA5500D1DF39 /* PicUpAppDelegate.m */,
@@ -231,6 +235,15 @@
 			);
 			name = Network;
 			path = network;
+			sourceTree = "<group>";
+		};
+		22B1A6901387BB6000D1DF39 /* imageProc */ = {
+			isa = PBXGroup;
+			children = (
+				22B1A6971387BE5400D1DF39 /* Tools.h */,
+				22B1A6981387BE5400D1DF39 /* Tools.m */,
+			);
+			path = imageProc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,6 +363,7 @@
 				22B1A68313871D2D00D1DF39 /* ASIDataCompressor.m in Sources */,
 				22B1A68413871D2D00D1DF39 /* ASIAuthenticationDialog.m in Sources */,
 				22B1A68713871D4800D1DF39 /* Reachability.m in Sources */,
+				22B1A6991387BE5400D1DF39 /* Tools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

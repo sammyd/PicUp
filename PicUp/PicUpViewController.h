@@ -15,11 +15,15 @@
     UIImageView *imageView;
     UIButton    *takePhotoButton;
     UIButton    *choosePhotoButton;
+    UIButton    *uploadButton;
+    UIActivityIndicatorView *activityIndicator;
 }
 
 @property (nonatomic, retain) IBOutlet UIImageView * imageView;
 @property (nonatomic, retain) IBOutlet UIButton * takePhotoButton;
 @property (nonatomic, retain) IBOutlet UIButton * choosePhotoButton;
+@property (nonatomic, retain) IBOutlet UIButton * uploadButton;
+@property (nonatomic, retain) IBOutlet UIActivityIndicatorView * activityIndicator;
 
 -(IBAction) getPhoto:(id) sender;
 -(IBAction) uploadPhoto:(id) sender;
