@@ -63,12 +63,13 @@
     [picker dismissModalViewControllerAnimated:YES];
     imageView.image = [(UIImage *)[info objectForKey:@"UIImagePickerControllerOriginalImage"] imageByScalingAndCroppingForSize:CGSizeMake(450.0, 600.0)];
     uploadButton.hidden = FALSE;
+    [picker release];
 }
 
 
 - (void) uploadPhoto:(id)sender {
     NSURL *url = [NSURL URLWithString:@"http://modulo13.ath.cx/pui_iphone/upload.php"];
-    NSData *imageData = UIImageJPEGRepresentation(imageView.image, 10);
+    NSData *imageData = UIImageJPEGRepresentation(imageView.image, 90);
     
     ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
     [request setDelegate:self];
