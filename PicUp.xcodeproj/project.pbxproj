@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22140EA1138D91C3006D424B /* iphoneBalloon copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 22140EA0138D91C3006D424B /* iphoneBalloon copy.png */; };
+		22140EA4138D91CC006D424B /* iphoneBalloon copy2.png in Resources */ = {isa = PBXBuildFile; fileRef = 22140EA3138D91CC006D424B /* iphoneBalloon copy2.png */; };
 		22B1A6301386DA5500D1DF39 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B1A62F1386DA5500D1DF39 /* UIKit.framework */; };
 		22B1A6321386DA5500D1DF39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B1A6311386DA5500D1DF39 /* Foundation.framework */; };
 		22B1A6341386DA5500D1DF39 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B1A6331386DA5500D1DF39 /* CoreGraphics.framework */; };
@@ -49,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22140EA0138D91C3006D424B /* iphoneBalloon copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphoneBalloon copy.png"; sourceTree = "<group>"; };
+		22140EA3138D91CC006D424B /* iphoneBalloon copy2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphoneBalloon copy2.png"; sourceTree = "<group>"; };
 		22B1A62B1386DA5400D1DF39 /* PicUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B1A62F1386DA5500D1DF39 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		22B1A6311386DA5500D1DF39 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -130,6 +134,8 @@
 		22B1A6201386DA5400D1DF39 = {
 			isa = PBXGroup;
 			children = (
+				22140EA3138D91CC006D424B /* iphoneBalloon copy2.png */,
+				22140EA0138D91C3006D424B /* iphoneBalloon copy.png */,
 				22B1A68E13871ECC00D1DF39 /* libz.1.2.3.dylib */,
 				22B1A68C13871EBD00D1DF39 /* MobileCoreServices.framework */,
 				22B1A68A13871EAA00D1DF39 /* SystemConfiguration.framework */,
@@ -316,6 +322,8 @@
 				22B1A63A1386DA5500D1DF39 /* InfoPlist.strings in Resources */,
 				22B1A6431386DA5500D1DF39 /* MainWindow.xib in Resources */,
 				22B1A6491386DA5500D1DF39 /* PicUpViewController.xib in Resources */,
+				22140EA1138D91C3006D424B /* iphoneBalloon copy.png in Resources */,
+				22140EA4138D91CC006D424B /* iphoneBalloon copy2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,6 +552,7 @@
 				22B1A6641386DA5500D1DF39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22B1A6651386DA5500D1DF39 /* Build configuration list for PBXNativeTarget "PicUpTests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +561,7 @@
 				22B1A6671386DA5500D1DF39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
